@@ -55,5 +55,6 @@ sudo docker run \
   --env DISPLAY=$DISPLAY \
   --env TERM=xterm-256color \
   -v /dev:/dev \
+  -e NVIDIA_DRIVER_CAPABILITIES=all \
   airo_noetic_lala:$distro \
   /bin/bash 
